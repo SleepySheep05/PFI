@@ -291,4 +291,7 @@ grid-area: day1;
     background-color:snow;
     font-size: medium;
     }
+    .buttonleft{
+        float: right;
+    }
 }
