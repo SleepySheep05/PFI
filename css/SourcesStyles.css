@@ -65,12 +65,7 @@ img{
     height: 40%;
 }
 @media screen and (width < 800px){
-
-    .profile{
- width: 15%;
-    height: 80%;
-    border-radius: 50%;
-float: right;
-    margin: 5px;
-    }
+.buttonleft{
+    float: right;
+}
 }
