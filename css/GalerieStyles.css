@@ -88,12 +88,20 @@ div.galerie {
     text-align: center;
   }
 @media screen and (width < 800px){
-
-    .profile{
- width: 15%;
-    height: 80%;
-    border-radius: 50%;
-float: right;
-    margin: 5px;
+    .grille {
+        display: grid;
+        grid-template-rows: min-content min-content 5fr min-content;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "footer";
+        width: 100%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:snow;
+    }
+    .buttonleft{
+        float: right;
     }
 }
