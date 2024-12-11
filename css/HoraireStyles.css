@@ -289,5 +289,6 @@ grid-area: day1;
         width: 100%;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:snow;
+    font-size: medium;
     }
 }
