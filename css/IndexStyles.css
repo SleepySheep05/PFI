@@ -111,11 +111,15 @@ float: right;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color:snow;
 }
+.buttonleft{
+float: right;
+}
     .profile{
         display: block;
  width: 40%;
     height: 20%;
     border-radius: 50%;
     margin: 5px 70px;
+    justify-content: center;
     }
 }
