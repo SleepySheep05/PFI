@@ -116,12 +116,17 @@ font-size: 4em;
     text-align: center;
 }
 @media screen and (width < 800px){
-
-    .profile{
- width: 15%;
-    height: 80%;
-    border-radius: 50%;
-float: right;
-    margin: 5px;
+    .grille {
+        display: grid;
+        grid-template-rows: min-content 5fr 3fr min-content;
+        grid-template-columns: 2fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        width: 100%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:snow;
     }
 }
