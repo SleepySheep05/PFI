@@ -86,7 +86,7 @@ background-color: white;
 border: solid black 1px;
 width: fit-content;
 float: none;
-min-width: 30%;
-min-height: 30%;
+min-width: 20%;
+min-height: 20%;
 }
 }
