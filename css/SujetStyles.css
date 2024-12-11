@@ -1,0 +1,88 @@
+.grille {
+    display: grid;
+    grid-template-rows: min-content min-content 5fr min-content;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:snow;
+}
+
+.top {
+    grid-area: nav;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+}
+.upcenter{
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    text-align: center;
+    background-image:url(../images/HeaderSujet.jpg) ;
+    background-size: cover;
+    color: snow;
+}
+.center {
+    grid-area: main;
+    width: 100%;
+    text-align: left;
+}
+
+.bottom {
+    grid-area: footer;
+    width: 100%;
+    background-color: lightgray;
+    text-align: right;
+}
+
+a:hover {
+    color: blue;
+}
+
+.links {
+    color: black;
+}
+.buttonleft{
+    background-color: snow;
+    float: left;
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 6em;
+    text-align: center;
+}
+.buttonright{
+    background-color: snow;
+    float: right;
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 6em;
+    text-align: center;
+}
+.titre
+{
+    text-align: center;
+    font-weight: bolder;
+}
+figure {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: right;
+}
+@media screen and (width < 800px){
+
+    .profile{
+ width: 15%;
+    height: 80%;
+    border-radius: 50%;
+float: right;
+    margin: 5px;
+    }
+}

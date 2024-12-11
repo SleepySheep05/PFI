@@ -1,0 +1,130 @@
+.grille {
+    display: grid;
+    grid-template-rows: min-content min-content 5fr min-content;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:snow;
+}
+
+.top {
+    grid-area: nav;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+}
+.highcenter {
+    grid-area: header;
+    width: 100%;
+    text-align: center;
+    background-image:url(../images/HeaderProfessions.jpg) ;
+    color: snow;
+}
+.center {
+    grid-area: main;
+    width: 100%;
+    text-align: left;
+}
+
+.bottom {
+    grid-area: footer;
+    width: 100%;
+    background-color: lightgray;
+    text-align: right;
+}
+
+a:hover {
+    color: blue;
+}
+
+.links {
+    color: black;
+}
+.buttonleft{
+    background-color: snow;
+    float: left;
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 6em;
+    text-align: center;
+}
+.buttonright{
+    background-color: snow;
+    float: right;
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 6em;
+    text-align: center;
+}
+.secgrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 3fr 2fr ;
+    grid-template-areas: 
+    "job1 desc1 desc1"
+    "job2 desc2 desc2"
+    "job3 desc3 desc3"
+    "job4 desc4 desc4"
+    "job5 desc5 desc5";
+    width: 100%;
+}
+    .job1{
+        grid-area: job1;
+    }
+    .job2{
+        grid-area: job2;
+    }
+    .job3{
+        grid-area: job3;
+    }
+    .job4{
+        grid-area: job4;
+    }
+    .job5{
+        grid-area: job5;
+    }
+    .desc1{
+        grid-area: desc1;
+    }
+    .desc2{
+        grid-area: desc2;
+    }
+    .desc3{
+        grid-area: desc3;
+    }
+    .desc4{
+        grid-area: desc4;
+    }
+    .desc5{
+        grid-area: desc5;
+    }
+    .secgrid > *{
+    border: 2px black solid;
+    border-collapse: collapse;
+    }
+.titre
+{
+    text-align: center;
+    font-weight: bolder;
+}
+div:nth-child(4n-1){
+  background-color: bisque;
+}
+div:nth-child(4n){
+  background-color: bisque;
+}
+@media screen and (width < 800px){
+
+    .profile{
+ width: 15%;
+    height: 80%;
+    border-radius: 50%;
+float: right;
+    margin: 5px;
+    }
+}

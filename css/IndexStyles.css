@@ -1,0 +1,121 @@
+.grille {
+    display: grid;
+    grid-template-rows: min-content min-content 2fr 5fr min-content;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "article aside aside"
+        "footer footer footer";
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:snow;
+}
+
+.top {
+    grid-area: nav;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+}
+
+.highcenter {
+    grid-area: header;
+    width: 100%;
+    text-align: center;
+    background-image:url(../images/HeaderIndex.jpg) ;
+}
+
+.center {
+    grid-area: main;
+    width: 100%;
+}
+
+.left {
+    grid-area: article;
+    width: 100%;
+    border: 4px solid gray;
+    font-size:smaller;
+}
+
+.right {
+    grid-area: aside;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.bottom {
+    grid-area: footer;
+    width: 100%;
+    background-color: lightgray;
+    text-align: right;
+}
+
+a:hover {
+    color: blue;
+}
+
+.links {
+    color: black;
+}
+.buttonleft{
+    background-color: snow;
+    float: left;
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 6em;
+    text-align: center;
+}
+.buttonright{
+    background-color: snow;
+    float: right;
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 6em;
+    text-align: center;
+}
+.profile
+{
+    width: 15%;
+    height: 60%;
+    border-radius: 50%;
+float: right;
+    margin: 5px;
+}
+.nom
+{
+    display:inline-block;
+    margin-left: 10%;
+}
+.line
+{
+    border: 2px solid gray;
+}
+.titre
+{
+    text-align: center;
+}
+@media screen and (width < 400px){
+.grille{
+    grid-template-rows: 1fr min-content 1fr 3fr 3fr min-content;
+    grid-template-columns: 3fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "article"
+        "aside"
+        "footer";
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:snow;
+}
+    .profile{
+        display: block;
+ width: 40%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 5px 70px;
+    }
+}
